@@ -1,0 +1,9 @@
+echo $GEM_HOME
+echo `test -n $GEM_HOME`
+echo $?
+if [ -z $GEM_HOME ]
+then
+  echo bundle_not_found
+else
+	echo $GEM_HOME
+fi
